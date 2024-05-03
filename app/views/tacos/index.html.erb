@@ -1,10 +1,11 @@
-<h1> I love tacos! </h1>
+<% colors = ["red", "blue", "purple", "orange"]%>
 
-<p> There are <%= 3 + 5 %> types of tacos</p>
+<p> There are <%= colors.length %> colors </p>
+
 <ul>
-<li> carnitas</li>
-<li> al pastor </li>
-<li> steak </li>
-<li> fish </li>
+  <%for color in colors%>
+    <li> <%= color %> </li>
+  <%end%>
 </ul>
 
+<p> There are <%= 4 + 2 %> colors </p>
